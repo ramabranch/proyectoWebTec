@@ -183,7 +183,7 @@ main{
     height: 30vh;    
     border: 1px solid #000;
     border-radius: 50%;
-    background: url("/img/img3.png") center no-repeat;
+    background: url("../img/img3.png") center no-repeat;
     background-size: cover;
 }
 
