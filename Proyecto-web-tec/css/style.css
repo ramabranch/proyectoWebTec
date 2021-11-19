@@ -324,9 +324,10 @@ main{
     }
 
     .main--section4{
-        height: 100vh;
+        height: 200vh;
         flex-direction: column;
-        align-items: center
+        align-items: center;
+        justify-content: flex-start
     }
     .main--section4__div0{
         flex-direction: column;
@@ -335,18 +336,26 @@ main{
     }
 }
 
+@media (max-width: 1200px ){
+    .main--section4__div0{
+    position: relative;
+    top: 50px;
+}
+}
+
 @media (max-width: 450px ){
     nav > ul {
         height: 95px;
         flex-direction: column;
     }
+
     main{
         position: relative;
         top: 45px;
     }
 
     .main--section1__div2,.main--section1__div3, .main--section2__div2,.main--section2__div2 > img, .main--section3__div1 ,.main--section4__div1 > img,.main--section4__div2{
-        width: 45vh;
+        width: 40vh;
         height: 45vh;
     }
 
@@ -366,22 +375,31 @@ main{
 
 @media (max-width: 360px ){
 
+    .section1__div2 > a{
+        padding: 10px 10px;
+    }
+
     .main--section2__div1{
     position: relative;
         top: -100px;
     }
 
     .main--section1__div2, .main--section1__div3, .main--section2__div2, .main--section2__div2 > img ,.main--section4__div1 > img, .main--section4__div2{
-        width: 38vh;
+        width: 30vh;
         height: 40vh;
     }
 
     .main--section3__div1{
-        width: 38vh;
+        width: 30vh;
         height: 65vh;
         top: 200px;
     }
-    
+    .main--section1__div2 > a{
+        font-size: 2vh;
+        margin: 5px 0;
+        padding: 0.9vh;
+    } 
+
     .p1, .p2, .p3, .p4, .p5{
         margin: 0.5vh;
     }
@@ -393,28 +411,22 @@ main{
         top: -150px;
     }
 
-    .main--section1__div3, .main--section2__div2, .main--section2__div2 > img,/*  .main--section2__div3, */.main--section4__div1 > img, .main--section4__div2{
-        width: 32vh;
+    .main--section1__div3, .main--section2__div2, .main--section2__div2 > img,  .main--section2__div3,.main--section4__div1 > img, .main--section4__div2{
+        width: 30vh;
         height: auto;
     }
 
     .main--section1__div2{
-        width: 32vh;
+        width: 30vh;
         height: 30vh;
     }
-    
-    .main--section1__div2 > a{
-        font-size: 2vh;
-        margin: 5px 0;
-        padding: 0.9vh;
-    } 
-    
+
     .main--section1__div2 > p{
         font-size: 1.5vh;
     }
 
     .main--section3__div1{
-        width: 32vh;
+        width: 30vh;
         height: 65vh;
         position: relative;
         top: 400px;
@@ -423,6 +435,9 @@ main{
     .main--section2__div3 > h2{
         font-size: 5vh;
     }
+
+    .main--section4__div0{
+        position: relative;
+        top: 50px;
+    }
 }
-
-
